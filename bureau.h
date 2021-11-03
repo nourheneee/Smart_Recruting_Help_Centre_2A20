@@ -5,7 +5,7 @@
 using namespace  std;
 
 #endif // BUREAU_H
-
+//
 class  bureau{
     string code_de_bureau;
     int numero_responsable;
