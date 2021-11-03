@@ -3,7 +3,7 @@
 #include<string>
 
 using namespace  std;
-
+//
 #endif // BUREAU_H
 //
 class  bureau{
