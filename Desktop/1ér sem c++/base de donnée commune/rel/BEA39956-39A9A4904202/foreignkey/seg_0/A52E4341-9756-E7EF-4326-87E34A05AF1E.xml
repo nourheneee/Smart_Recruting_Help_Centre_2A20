@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A52E4341-9756-E7EF-4326-87E34A05AF1E" containerWithKeyObject="EAB146D3-E896-7DB5-831B-41D335EEA39F" localFKIndex="4969F574-9D78-E016-FB4E-7ABE833BEC7F" name="NUM_DE_CLINET3">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>FOURAT</sourceObjSchema>
+<sourceObjName>NUM_DE_CLINET3</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:41 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<referredTableLongName>FOURAT.CLIENT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>195B4AC5-D107-FA26-05E6-B1AD84F4E425</referredTableID>
+<keyObject>0544A6AA-2B0D-B588-411E-EC94BB270184</keyObject>
+<referredKeyID>0544A6AA-2B0D-B588-411E-EC94BB270184</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>NUM</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

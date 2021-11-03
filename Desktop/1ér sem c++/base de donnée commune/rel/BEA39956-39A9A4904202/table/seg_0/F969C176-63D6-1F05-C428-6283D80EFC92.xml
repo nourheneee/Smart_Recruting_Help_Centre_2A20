@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F969C176-63D6-1F05-C428-6283D80EFC92" schemaObject="A4321B4F-5CFF-680E-A9C4-87C52C224883" name="CONTACTER">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>FOURAT</sourceObjSchema>
+<sourceObjName>CONTACTER</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:33 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_EMP" id="0F92BB32-BA07-D7FC-AED1-E1E49F6E84F7">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>CONTACTER</sourceObjSchema>
+<sourceObjName>ID_EMP</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:33 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9B95FD87-AB56-6E02-F48B-35CFEE47488E" referredColumn="37602F80-5DF4-DD61-A0DC-5FBE5E7819D5"/>
+</associations>
+</Column>
+<Column name="NUM_CLI" id="9D3AAC28-442E-F7A9-51E6-2DB40D0C33E4">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>CONTACTER</sourceObjSchema>
+<sourceObjName>NUM_CLI</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:33 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6C8B66BA-8562-EC16-3904-775DC7F7FA3E" referredColumn="5FA6A68A-ACBE-B421-ED37-6AFD662BC196"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F85625D3-ACF9-027A-B771-770233A63BEC" name="ID_DEEMPOLYE">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:33 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F92BB32-BA07-D7FC-AED1-E1E49F6E84F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D93AD18C-1237-3766-1554-80F91E838A6F" name="NUM_DECLIENT">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:33 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D3AAC28-442E-F7A9-51E6-2DB40D0C33E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

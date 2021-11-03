@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="FOURAT" directorySegmentName="seg_0" id="A4321B4F-5CFF-680E-A9C4-87C52C224883">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:02 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</SchemaObject>

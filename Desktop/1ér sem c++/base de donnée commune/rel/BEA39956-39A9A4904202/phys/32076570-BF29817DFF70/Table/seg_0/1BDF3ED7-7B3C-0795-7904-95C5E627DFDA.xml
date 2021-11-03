@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="RECLAMATION" directorySegmentName="seg_0" id="1BDF3ED7-7B3C-0795-7904-95C5E627DFDA">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:46 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<schemaObject>A4321B4F-5CFF-680E-A9C4-87C52C224883</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>143A15D9-E320-D1F9-BF6E-01F5AD4EE73D</segment>
+<tableSpace>48DC0839-F6E9-E403-2E0D-5DBD6FED7EC1</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="SUJET_RECLAMATION" id="3F3FF4BA-CC38-28D5-5B2D-10A159FC5C53">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:46 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="POSTE" id="62AA1AF0-CB97-0E65-D997-F3350FA1DCD3">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:46 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUM_RECLAMATION" id="891366CC-4063-1A64-E431-027DF384B780">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:46 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATE_RECLAMATION" id="E33F11ED-A3AA-4271-E01B-55C780F2729E">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:46 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="RECLAMATION_PK" id="752757A7-5F4F-05E4-E10F-668A84FB4CFD">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:46 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<schemaObject>A4321B4F-5CFF-680E-A9C4-87C52C224883</schemaObject>
+<segment>CB343606-D11D-C03E-71F3-995D21561009</segment>
+<tableSpace>48DC0839-F6E9-E403-2E0D-5DBD6FED7EC1</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="RECLAMATION_PK" id="E32C4874-E63F-E8CD-764B-F813FD48125A">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:46 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<segment>CB343606-D11D-C03E-71F3-995D21561009</segment>
+<tableSpace>48DC0839-F6E9-E403-2E0D-5DBD6FED7EC1</tableSpace>
+<existingIndex>752757A7-5F4F-05E4-E10F-668A84FB4CFD</existingIndex>
+<indexSegment>CB343606-D11D-C03E-71F3-995D21561009</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="ENTRETIENT" directorySegmentName="seg_0" id="B5F304C5-E1A3-5676-4C00-EBC6218597EA">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:10 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<schemaObject>A4321B4F-5CFF-680E-A9C4-87C52C224883</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>143A15D9-E320-D1F9-BF6E-01F5AD4EE73D</segment>
+<tableSpace>48DC0839-F6E9-E403-2E0D-5DBD6FED7EC1</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PRENOM" id="0760DCED-CA05-70A5-0478-F2E7A981A572">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:10 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATE_NAISSANCE" id="2FB22BF6-6EB8-7DB2-5522-0D4FC57BDB5F">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:10 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEXE" id="354985C9-E9C3-8E2F-5028-0D126AF0CA93">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:10 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CIN" id="7AD1AB71-FED0-BFB9-FCB5-4CE2208CFBA1">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:10 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AGE" id="804DC4CD-71DB-3914-6B9C-0C1D36A6C241">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:10 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_EMPLOYE" id="90A267A1-915F-80EC-37AD-02E4E74827C1">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:10 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EXPERINECE" id="C9039F1B-AE77-5962-10DE-71DBE12A44D6">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:10 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ADRESS" id="D8132CA2-3637-F24A-36A9-F715BB365BBA">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:10 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUM_CLIENT" id="E5EF1B0A-C001-AA80-6AED-68DE0EDD4F92">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:10 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOM" id="F9695A88-1C34-B918-0400-E759971D8541">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:10 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="ENTRETIENT_PK" id="649B0421-EFED-94E7-3748-4FD96EBEFB08">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:10 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<schemaObject>A4321B4F-5CFF-680E-A9C4-87C52C224883</schemaObject>
+<segment>CB343606-D11D-C03E-71F3-995D21561009</segment>
+<tableSpace>48DC0839-F6E9-E403-2E0D-5DBD6FED7EC1</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="NUM_CLIENT" id="0AEBC4AF-00D5-81A3-0ED7-F2DD45B10B5F">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:10 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ID_EMPOLYE" id="2DBD1ABC-A1BB-3F14-C773-2F6F7C0B70C7">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:10 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ENTRETIENT_PK" id="A5C1851C-605B-F35A-E6A6-D3D2E326D18E">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:10 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<segment>CB343606-D11D-C03E-71F3-995D21561009</segment>
+<tableSpace>48DC0839-F6E9-E403-2E0D-5DBD6FED7EC1</tableSpace>
+<existingIndex>649B0421-EFED-94E7-3748-4FD96EBEFB08</existingIndex>
+<indexSegment>CB343606-D11D-C03E-71F3-995D21561009</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

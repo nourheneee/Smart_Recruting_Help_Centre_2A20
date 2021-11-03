@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F1EBA0AC-53CD-C41D-8682-4DB6582184BC" schemaObject="A4321B4F-5CFF-680E-A9C4-87C52C224883" name="AFFECTER">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>FOURAT</sourceObjSchema>
+<sourceObjName>AFFECTER</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:15 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_EMPOLYE2" id="23DF0428-022E-C6CC-ADF8-34CC55B03519">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>AFFECTER</sourceObjSchema>
+<sourceObjName>ID_EMPOLYE2</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:15 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="27A883D9-1BCC-AE91-AD15-93B8B4EF526B" referredColumn="37602F80-5DF4-DD61-A0DC-5FBE5E7819D5"/>
+</associations>
+</Column>
+<Column name="NUM_RECLAMATION2" id="D66F798E-D2EA-5885-C8F4-435356B8DF4E">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>AFFECTER</sourceObjSchema>
+<sourceObjName>NUM_RECLAMATION2</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:15 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="090F3FAE-C4B8-C61E-5676-E44E93AEE045" referredColumn="891366CC-4063-1A64-E431-027DF384B780"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A59F9A43-FE23-2335-CEF2-49ACA00E776F" name="ID_DE_EMPOLYE">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:15 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23DF0428-022E-C6CC-ADF8-34CC55B03519"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2A639DF-0F6F-16CC-0D24-3E430D8B049B" name="ID_DE_EMPOLYEv1">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:15 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="5750AB8E-79D5-1794-CF36-D6A1BBCBA060" name="NUM_DE_RECLAMATION">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:15 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D66F798E-D2EA-5885-C8F4-435356B8DF4E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

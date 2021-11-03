@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F6424B09-31C7-0A72-469A-79B2240127CC" schemaObject="A4321B4F-5CFF-680E-A9C4-87C52C224883" name="FAIRE">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>FOURAT</sourceObjSchema>
+<sourceObjName>FAIRE</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:20 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NOM_SOCIETE2" id="26105216-ABD1-90B1-CB3C-B11457EF4404">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>FAIRE</sourceObjSchema>
+<sourceObjName>NOM_SOCIETE2</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:20 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BC80F7CB-CEB7-A52D-A0F2-9F0E7C3BFA80" referredColumn="125068ED-09F2-6262-8121-94A3B4618E76"/>
+</associations>
+</Column>
+<Column name="NUM_RECLAMATION3" id="D3BDB39B-1F1F-09E3-4567-33DD754A4DEE">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>FAIRE</sourceObjSchema>
+<sourceObjName>NUM_RECLAMATION3</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:20 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6BDCDCF5-6887-0BF2-CF20-6447F2F990B6" referredColumn="891366CC-4063-1A64-E431-027DF384B780"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C5A17FB1-CD24-FBCB-AECF-EC0FA39AAEA5" name="NOM_DE_SOCIETE">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:20 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26105216-ABD1-90B1-CB3C-B11457EF4404"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3489A68-8123-4E08-3122-2E70F1378D8F" name="NUM_DERECLAMATION">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:20 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3BDB39B-1F1F-09E3-4567-33DD754A4DEE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

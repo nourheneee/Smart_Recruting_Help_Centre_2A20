@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="SOCIETÉ" directorySegmentName="seg_0" id="96BDC591-7219-E7BF-F622-24B30F6D8D9A">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:56 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<schemaObject>A4321B4F-5CFF-680E-A9C4-87C52C224883</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>143A15D9-E320-D1F9-BF6E-01F5AD4EE73D</segment>
+<tableSpace>48DC0839-F6E9-E403-2E0D-5DBD6FED7EC1</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NOM_SOCIETE" id="125068ED-09F2-6262-8121-94A3B4618E76">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:56 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DELAI_DES_OFFRES" id="6DEB99CA-AA2E-BFCF-03E1-312671F4199F">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:56 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DELAI_FONDATION_SOCIETE" id="8724CE6B-9F98-DF96-05F5-65E72B1B3487">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:56 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REGION_SOCIETE" id="8E14C538-A97C-77C8-C2C6-EAC145FBA242">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:56 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE_DES_OFFRES" id="8F457B53-3453-48EC-8243-FE5EE9E79729">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:56 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOM_ADMINISTRATIF_SOCIETE" id="9B509F20-1D22-345D-F9F8-EAAB7241BF48">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:56 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CONTACT_ADMINISTRATIF_SOCIETE" id="D48AD061-ECD4-2319-2007-BB928114FBD9">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:56 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SOCIETÉ_PK" id="6EA725D9-D2BC-AEE2-4D71-51DB840C4D98">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:56 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<schemaObject>A4321B4F-5CFF-680E-A9C4-87C52C224883</schemaObject>
+<segment>CB343606-D11D-C03E-71F3-995D21561009</segment>
+<tableSpace>48DC0839-F6E9-E403-2E0D-5DBD6FED7EC1</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SOCIETÉ_PK" id="434D8042-08E0-B781-5E94-E791DCCFEB01">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:56 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<segment>CB343606-D11D-C03E-71F3-995D21561009</segment>
+<tableSpace>48DC0839-F6E9-E403-2E0D-5DBD6FED7EC1</tableSpace>
+<existingIndex>6EA725D9-D2BC-AEE2-4D71-51DB840C4D98</existingIndex>
+<indexSegment>CB343606-D11D-C03E-71F3-995D21561009</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

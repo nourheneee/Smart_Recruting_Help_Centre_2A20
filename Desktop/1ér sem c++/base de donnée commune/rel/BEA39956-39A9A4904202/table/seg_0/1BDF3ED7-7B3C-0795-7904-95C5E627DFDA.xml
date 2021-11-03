@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1BDF3ED7-7B3C-0795-7904-95C5E627DFDA" schemaObject="A4321B4F-5CFF-680E-A9C4-87C52C224883" name="RECLAMATION">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>FOURAT</sourceObjSchema>
+<sourceObjName>RECLAMATION</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:46 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NUM_RECLAMATION" id="891366CC-4063-1A64-E431-027DF384B780">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>RECLAMATION</sourceObjSchema>
+<sourceObjName>NUM_RECLAMATION</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:46 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POSTE" id="62AA1AF0-CB97-0E65-D997-F3350FA1DCD3">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>RECLAMATION</sourceObjSchema>
+<sourceObjName>POSTE</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:46 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_RECLAMATION" id="E33F11ED-A3AA-4271-E01B-55C780F2729E">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>RECLAMATION</sourceObjSchema>
+<sourceObjName>DATE_RECLAMATION</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:46 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUJET_RECLAMATION" id="3F3FF4BA-CC38-28D5-5B2D-10A159FC5C53">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>RECLAMATION</sourceObjSchema>
+<sourceObjName>SUJET_RECLAMATION</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:46 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E32C4874-E63F-E8CD-764B-F813FD48125A" name="RECLAMATION_PK">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>FOURAT</sourceObjSchema>
+<sourceObjName>RECLAMATION_PK</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:46 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="891366CC-4063-1A64-E431-027DF384B780"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="752757A7-5F4F-05E4-E10F-668A84FB4CFD" schemaObject="A4321B4F-5CFF-680E-A9C4-87C52C224883" name="RECLAMATION_PK">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>FOURAT</sourceObjSchema>
+<sourceObjName>RECLAMATION_PK</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:46 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="891366CC-4063-1A64-E431-027DF384B780"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

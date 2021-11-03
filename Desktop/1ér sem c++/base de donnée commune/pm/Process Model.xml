@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="ABD23097-4901-DBC2-CF4B-0FDE82ADB130">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:43:51 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

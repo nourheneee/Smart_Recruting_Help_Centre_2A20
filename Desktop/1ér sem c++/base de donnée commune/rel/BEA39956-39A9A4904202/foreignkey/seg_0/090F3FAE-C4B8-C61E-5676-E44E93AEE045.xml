@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="090F3FAE-C4B8-C61E-5676-E44E93AEE045" containerWithKeyObject="F1EBA0AC-53CD-C41D-8682-4DB6582184BC" localFKIndex="5750AB8E-79D5-1794-CF36-D6A1BBCBA060" name="NUM_DE_RECLAMATION">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>FOURAT</sourceObjSchema>
+<sourceObjName>NUM_DE_RECLAMATION</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:15 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<referredTableLongName>FOURAT.RECLAMATION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1BDF3ED7-7B3C-0795-7904-95C5E627DFDA</referredTableID>
+<keyObject>E32C4874-E63F-E8CD-764B-F813FD48125A</keyObject>
+<referredKeyID>E32C4874-E63F-E8CD-764B-F813FD48125A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>NUM_RECLAMATION</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

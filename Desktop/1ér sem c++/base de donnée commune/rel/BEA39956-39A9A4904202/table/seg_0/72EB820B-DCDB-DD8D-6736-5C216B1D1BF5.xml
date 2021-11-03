@@ -1,0 +1,199 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="72EB820B-DCDB-DD8D-6736-5C216B1D1BF5" schemaObject="A4321B4F-5CFF-680E-A9C4-87C52C224883" name="EMPLOYE">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>FOURAT</sourceObjSchema>
+<sourceObjName>EMPLOYE</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:50 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="37602F80-5DF4-DD61-A0DC-5FBE5E7819D5">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>EMPLOYE</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:50 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOM" id="A1965E26-7A8D-18F2-C81B-F542A5A95749">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>EMPLOYE</sourceObjSchema>
+<sourceObjName>NOM</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:50 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRENOM" id="CFFA68C7-BA14-8B02-71A6-479E4C7D2629">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>EMPLOYE</sourceObjSchema>
+<sourceObjName>PRENOM</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:50 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEXE" id="A18DEEEF-BAD5-CCDD-E62D-AC752EBA01A7">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>EMPLOYE</sourceObjSchema>
+<sourceObjName>SEXE</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:50 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POSTE" id="8112F574-D38C-BE3F-591E-7010CC330FB9">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>EMPLOYE</sourceObjSchema>
+<sourceObjName>POSTE</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:50 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AGE" id="67853DEB-7EF0-5435-695E-4E2C0DB77B9A">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>EMPLOYE</sourceObjSchema>
+<sourceObjName>AGE</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:50 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALAIRE" id="A8A4426B-2E58-DB98-615A-8E2684A96E99">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>EMPLOYE</sourceObjSchema>
+<sourceObjName>SALAIRE</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:50 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HEURES_DE_TRAVAIL" id="F986CD29-E623-022C-6EB0-A3A566788E57">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>EMPLOYE</sourceObjSchema>
+<sourceObjName>HEURES_DE_TRAVAIL</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:50 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ABSENCES" id="9253FAA0-6E15-C7F8-798A-3492E20064CA">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>EMPLOYE</sourceObjSchema>
+<sourceObjName>ABSENCES</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:50 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODE_DE_BUR" id="C44767E9-2487-9F87-3BFB-30E98D63EBC2">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>EMPLOYE</sourceObjSchema>
+<sourceObjName>CODE_DE_BUR</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:50 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BBC28A98-9B63-3981-E105-467A36567243" referredColumn="CF34131E-5817-626E-331C-286F5C0FD61D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="87120D1B-CF44-00D8-6D9F-CDAF4E707E82" name="EMPOOLYÉ_PK">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>FOURAT</sourceObjSchema>
+<sourceObjName>EMPOOLYÉ_PK</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:50 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37602F80-5DF4-DD61-A0DC-5FBE5E7819D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BD455F35-2F09-8114-D729-8730285A06E4" schemaObject="A4321B4F-5CFF-680E-A9C4-87C52C224883" name="EMPOOLYÉ_PK">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>FOURAT</sourceObjSchema>
+<sourceObjName>EMPOOLYÉ_PK</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:50 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37602F80-5DF4-DD61-A0DC-5FBE5E7819D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="86DB8AC2-5DB3-2971-2BFC-FF718FE936B5" name="CODE_DE_BUR">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:50 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C44767E9-2487-9F87-3BFB-30E98D63EBC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

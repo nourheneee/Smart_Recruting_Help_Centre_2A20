@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="7A624794-1639-ADA6-A4E0-4A5CD236A7C0">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:43:51 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

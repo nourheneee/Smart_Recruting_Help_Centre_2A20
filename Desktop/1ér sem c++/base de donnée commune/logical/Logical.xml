@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="6551858B-E2A9-11AE-4675-DC9BDB4BC7AE" mainViewID="2BDACD82-C061-42DE-C58C-C4926BFC13C5">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:43:51 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="BUREAU_TRAVAIL" directorySegmentName="seg_0" id="0245B703-0DD5-C76C-7A11-E343A46B9C67">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:02 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<schemaObject>A4321B4F-5CFF-680E-A9C4-87C52C224883</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>143A15D9-E320-D1F9-BF6E-01F5AD4EE73D</segment>
+<tableSpace>48DC0839-F6E9-E403-2E0D-5DBD6FED7EC1</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NB_DEMANDE" id="02BB3340-B20B-4B6A-B9D6-CBCDFB67C16F">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:02 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CORDONNÉ_BUREAU" id="640D9C08-DD99-F848-0E03-528F82539229">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:02 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NB_ACT_EMPL" id="862F5487-A5E2-57DA-5A80-B53867F36BFA">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:02 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VILLE" id="89F44AF5-8245-CF43-0BA7-9A9D1A12ADF7">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:02 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATE_LANCEMENT" id="8A87AC58-CA53-3CF8-634D-4CA92FD16A89">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:02 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NB_OFFRE" id="C3EAEAD2-2758-A4A8-F917-E05B8C1840B8">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:02 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CAPACITE_BUREAU" id="C4D71DD0-5011-883F-8838-65EA3DA93E24">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:02 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CODE_BUREAU" id="CF34131E-5817-626E-331C-286F5C0FD61D">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:02 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUMERO_RESP_BUREAU" id="D94354C5-786B-26F2-A720-1B488C7025C9">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:02 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="BUREAU_TRAVAIL_PK" id="11353DE2-C6C4-7913-0802-6AE8B59A6561">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:02 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<schemaObject>A4321B4F-5CFF-680E-A9C4-87C52C224883</schemaObject>
+<segment>CB343606-D11D-C03E-71F3-995D21561009</segment>
+<tableSpace>48DC0839-F6E9-E403-2E0D-5DBD6FED7EC1</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="BUREAU_TRAVAIL_PK" id="7494D1AC-159C-C048-D071-0EF303591BEB">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:02 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<segment>CB343606-D11D-C03E-71F3-995D21561009</segment>
+<tableSpace>48DC0839-F6E9-E403-2E0D-5DBD6FED7EC1</tableSpace>
+<existingIndex>11353DE2-C6C4-7913-0802-6AE8B59A6561</existingIndex>
+<indexSegment>CB343606-D11D-C03E-71F3-995D21561009</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="96BDC591-7219-E7BF-F622-24B30F6D8D9A" schemaObject="A4321B4F-5CFF-680E-A9C4-87C52C224883" name="SOCIETÉ">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>FOURAT</sourceObjSchema>
+<sourceObjName>SOCIETÉ</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:56 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NOM_SOCIETE" id="125068ED-09F2-6262-8121-94A3B4618E76">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>SOCIETÉ</sourceObjSchema>
+<sourceObjName>NOM_SOCIETE</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:56 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOM_ADMINISTRATIF_SOCIETE" id="9B509F20-1D22-345D-F9F8-EAAB7241BF48">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>SOCIETÉ</sourceObjSchema>
+<sourceObjName>NOM_ADMINISTRATIF_SOCIETE</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:56 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONTACT_ADMINISTRATIF_SOCIETE" id="D48AD061-ECD4-2319-2007-BB928114FBD9">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>SOCIETÉ</sourceObjSchema>
+<sourceObjName>CONTACT_ADMINISTRATIF_SOCIETE</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:56 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGION_SOCIETE" id="8E14C538-A97C-77C8-C2C6-EAC145FBA242">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>SOCIETÉ</sourceObjSchema>
+<sourceObjName>REGION_SOCIETE</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:56 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_DES_OFFRES" id="8F457B53-3453-48EC-8243-FE5EE9E79729">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>SOCIETÉ</sourceObjSchema>
+<sourceObjName>NOMBRE_DES_OFFRES</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:56 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DELAI_DES_OFFRES" id="6DEB99CA-AA2E-BFCF-03E1-312671F4199F">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>SOCIETÉ</sourceObjSchema>
+<sourceObjName>DELAI_DES_OFFRES</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:56 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DELAI_FONDATION_SOCIETE" id="8724CE6B-9F98-DF96-05F5-65E72B1B3487">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>SOCIETÉ</sourceObjSchema>
+<sourceObjName>DELAI_FONDATION_SOCIETE</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:56 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="434D8042-08E0-B781-5E94-E791DCCFEB01" name="SOCIETÉ_PK">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>FOURAT</sourceObjSchema>
+<sourceObjName>SOCIETÉ_PK</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:56 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="125068ED-09F2-6262-8121-94A3B4618E76"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6EA725D9-D2BC-AEE2-4D71-51DB840C4D98" schemaObject="A4321B4F-5CFF-680E-A9C4-87C52C224883" name="SOCIETÉ_PK">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>FOURAT</sourceObjSchema>
+<sourceObjName>SOCIETÉ_PK</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:48:56 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="125068ED-09F2-6262-8121-94A3B4618E76"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,38 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DECLARER" directorySegmentName="seg_0" id="EAB146D3-E896-7DB5-831B-41D335EEA39F">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:41 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<schemaObject>A4321B4F-5CFF-680E-A9C4-87C52C224883</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>143A15D9-E320-D1F9-BF6E-01F5AD4EE73D</segment>
+<tableSpace>48DC0839-F6E9-E403-2E0D-5DBD6FED7EC1</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NUM_RECLAMATION3" id="15439495-932A-791D-5401-B60190256CDC">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:41 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUM_CLIENT3" id="FC819092-AC45-E499-D59E-44E9421C89FE">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:41 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="NUM_DE_CLINET3" id="4969F574-9D78-E016-FB4E-7ABE833BEC7F">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:41 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="NUM_DE_RECLAMA" id="F8358177-03B6-B613-2BA1-3A92FDF1C1DE">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:41 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+</TableProxyOraclev11g>

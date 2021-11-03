@@ -1,0 +1,156 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="195B4AC5-D107-FA26-05E6-B1AD84F4E425" schemaObject="A4321B4F-5CFF-680E-A9C4-87C52C224883" name="CLIENT">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>FOURAT</sourceObjSchema>
+<sourceObjName>CLIENT</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:26 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SEXE" id="3253F4B4-DCA9-42EF-6087-764CB2E3A478">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>CLIENT</sourceObjSchema>
+<sourceObjName>SEXE</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:26 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGION" id="80EA956A-DA01-FCD9-5B06-A0A7E6F71B9C">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>CLIENT</sourceObjSchema>
+<sourceObjName>REGION</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:26 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_" id="E14148F4-6461-BB98-6E8F-388CF825DBDE">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>CLIENT</sourceObjSchema>
+<sourceObjName>DATE_</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:26 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_DOFFRE" id="DCBEAF2E-45BA-CDF9-E412-11DB6BFD54AF">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>CLIENT</sourceObjSchema>
+<sourceObjName>NOMBRE_DOFFRE</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:26 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POSTE" id="4F51728B-80E3-96BC-DC87-4844E80D3229">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>CLIENT</sourceObjSchema>
+<sourceObjName>POSTE</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:26 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUM" id="5FA6A68A-ACBE-B421-ED37-6AFD662BC196">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>CLIENT</sourceObjSchema>
+<sourceObjName>NUM</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:26 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOM_SOCIETE" id="E8CB2686-3298-6768-7B4C-390FB4EAEDC3">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>CLIENT</sourceObjSchema>
+<sourceObjName>NOM_SOCIETE</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:26 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="504D66A5-19D0-9470-5FA4-DACAB25407B7" referredColumn="125068ED-09F2-6262-8121-94A3B4618E76"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BA8855C3-D08F-96E6-1230-5BE91FA8F87C" name="CLIENT_PK">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>FOURAT</sourceObjSchema>
+<sourceObjName>CLIENT_PK</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:26 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5FA6A68A-ACBE-B421-ED37-6AFD662BC196"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0544A6AA-2B0D-B588-411E-EC94BB270184" schemaObject="A4321B4F-5CFF-680E-A9C4-87C52C224883" name="CLIENT_PK">
+<sourceConnName>smart_recruting_help_center</sourceConnName>
+<sourceObjSchema>FOURAT</sourceObjSchema>
+<sourceObjName>CLIENT_PK</sourceObjName>
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:26 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5FA6A68A-ACBE-B421-ED37-6AFD662BC196"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E7A6A137-EFA4-F6E4-A045-9DA18E4BDC2D" name="NOM_SOCIETE">
+<createdBy>foura</createdBy>
+<createdTime>2021-11-02 23:46:26 UTC</createdTime>
+<ownerDesignName>base de donnée commune</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8CB2686-3298-6768-7B4C-390FB4EAEDC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
