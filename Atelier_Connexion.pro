@@ -25,15 +25,15 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
-    etudiant.cpp \
         main.cpp \
         mainwindow.cpp \
-    connection.cpp
+    connection.cpp \
+    societe.cpp
 
 HEADERS += \
-    etudiant.h \
         mainwindow.h \
-    connection.h
+    connection.h \
+    societe.h
 
 FORMS += \
         mainwindow.ui

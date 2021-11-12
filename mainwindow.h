@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <etudiant.h>
+#include <societe.h>
 namespace Ui {
 class MainWindow;
 }
@@ -17,12 +17,15 @@ public:
 
 private slots:
     void on_pb_ajouter_clicked();
-
     void on_pb_supprimer_clicked();
+
+    //void on_pb_modifier_clicked();
+
+    void on_pb_modifier_clicked();
 
 private:
     Ui::MainWindow *ui;
-    Etudiant E;
+    Societe C;
 };
 
 #endif // MAINWINDOW_H
