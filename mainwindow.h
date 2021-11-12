@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include "employe.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -18,7 +18,14 @@ public:
 private slots:
     void on_pb_ajouter_clicked();
 
+    void on_pb_supprimer_clicked();
+
+
+
+    void on_pb_modifier_clicked();
+
 private:
     Ui::MainWindow *ui;
+    Employe E;
 };
 #endif // MAINWINDOW_H

@@ -2,34 +2,44 @@
 #define EMPLOYE_H
 
 #include <QString>
+#include <QSqlQueryModel>
 class Employe
 {
 public:
     Employe();
-    Employe(int,int,int,int,int,QString,QString,QString,QString);
+    Employe(int,QString,int,int,int,QString,QString,QString,int);
     int getid ();
-    int getage ();
+    QString getposte ();
     int getsalaire();
-    int getdate_debut_travail ();
-    int getdate_fin_travail ();
+    int getheures_de_travail();
+    int getabsences();
     QString getnom ();
     QString getprenom ();
     QString getsexe ();
-    QString getposte ();
+    int getage ();
+
+
+
     void setid (int);
-    void setage (int);
+    void setposte (QString);
     void setsalaire(int);
-    void setdate_debut_travail (int);
-    void setdate_fin_travail (int);
+    void setheures_de_travail (int);
+    void setabsences(int);
     void setnom (QString);
     void setprenom (QString);
     void setsexe (QString);
-    void setposte (QString);
-    bool ajouter();
+    void setage (int);
 
+    bool ajouter();
+    QSqlQueryModel* afficher();
+bool supprimer(int);
+bool modifier(int id , QString poste,int salaire,int heures_de_travail,int absences, QString nom, QString prenom , QString sexe,int age);
     private:
-        int id, age,salaire, date_debut_travail,date_fin_travail;
-    QString nom, prenom, sexe, poste;
+        int id;
+        QString poste;
+       int salaire,heures_de_travail,absences;
+    QString nom, prenom, sexe;
+    int age;
 };
 
 #endif // EMPLOYE_H
