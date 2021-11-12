@@ -33,14 +33,28 @@ void MainWindow::on_pb_ajouter_clicked()
    Employe E(id,poste,salaire,heures_de_travail,absences,nom,prenom,sexe,age);
 bool test=E.ajouter();
 QMessageBox msgBox;
+
+if(ui->le_id->text().isEmpty()||ui->le_poste->text().isEmpty()||ui->le_salaire->text().isNull()||ui->le_heures_de_travail->text().isNull()||ui->le_absences->text().isEmpty()||ui->le_nom->text().isEmpty()||ui->le_prenom->text().isNull()||ui->le_sexe->text().isNull()||ui->le_age->text().isNull())
+        {
+            QMessageBox::information(nullptr, QObject::tr("ERROR"),
+            QObject::tr("Please Fill All Data"), QMessageBox::Ok);
+        }
+
+
 if(test)
-{ msgBox.setText("Ajout avec suces.");
+{
+
+    msgBox.setText("Ajout avec suces.");
     ui->tab_employe->setModel(E.afficher());
 }
     else
+
+
         msgBox.setText("Echec d'ajout");
     msgBox.exec();
 }
+
+
 
 void MainWindow::on_pb_supprimer_clicked()
 {
@@ -68,15 +82,14 @@ void MainWindow::on_pb_modifier_clicked()
     QString prenom=ui->le_prenom_modifier->text();
     QString sexe=ui->le_sexe_modifier->text();
     int age=ui->le_age_modifier->text().toInt();
-    /*Employe E*/
+
     bool test=e.modifier(id,poste,salaire,heures_de_travail,absences,nom,prenom,sexe,age);
 
-    //bool test=E.modifier();
-           //QMessageBox msgbox;
+
 
            if (test)
                  {
-                     // Refresh (Actualiser)
+
                       ui->tab_employe->setModel(e.afficher());
                      QMessageBox::information(nullptr,QObject::tr("ok"),
                                               QObject::tr("modification effectué.\n"
@@ -90,18 +103,5 @@ void MainWindow::on_pb_modifier_clicked()
 
 
 
-           /*if(test)
-               {msgbox.setText("Modification avec succes.");
-
-                   ui->tab_employe->setModel(e.afficher());
-                   ui->le_id_modifier->setText("");
-                   ui->le_salaire_modifier->setText("");
-                    ui->le_heures_de_travail_modifier->setText("");
-                     ui->le_absences_modifier->setText("");
-                     ui->le_age_modifier->setText("");
-               }
-               else
-                   msgbox.setText("Echec de modification");
-               msgbox.exec();*/
 
 

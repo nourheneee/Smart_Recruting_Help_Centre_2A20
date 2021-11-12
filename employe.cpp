@@ -66,11 +66,9 @@ bool Employe::supprimer(int id)
     QSqlQuery query;
         query.prepare("DELETE FROM EMPLOYE where id=:id");
         query.bindValue(0,id);
-   // QSqlQuery query;
+
     QString id_string=QString::number(id);
-         /*query.prepare(" Delete from EMPLOYE where id=:id "
-                       "VALUESVALUES (:id, :poste, :salaire, :heures_de_travail, :absences, :nom, :prenom, :sexe, :age)");
-         query.bindValue(0, id);*/
+
 
     return query.exec();
 
@@ -83,19 +81,12 @@ QSqlQueryModel* Employe::afficher()
 QSqlQueryModel* model=new QSqlQueryModel();
 
      model->setQuery("SELECT* FROM EMPLOYE");
-     /*model->setHeaderData(0, Qt::Horizontal, QObject::tr("id"));
-     model->setHeaderData(1, Qt::Horizontal, QObject::tr("poste"));
-     model->setHeaderData(2, Qt::Horizontal, QObject::tr("salaire"));
-     model->setHeaderData(3, Qt::Horizontal, QObject::tr("heures_de_travail"));
-     model->setHeaderData(4, Qt::Horizontal, QObject::tr("absences"));
-     model->setHeaderData(5, Qt::Horizontal, QObject::tr("nom"));
-     model->setHeaderData(6, Qt::Horizontal, QObject::tr("prenom"));
-     model->setHeaderData(7, Qt::Horizontal, QObject::tr("sexe"));
-     model->setHeaderData(8, Qt::Horizontal, QObject::tr("age"));*/
 
 
  return model;
 }
+
+
 
 bool Employe::modifier(int id , QString poste,int salaire,int heures_de_travail,int absences, QString nom, QString prenom , QString sexe,int age)
 {
@@ -105,7 +96,7 @@ bool Employe::modifier(int id , QString poste,int salaire,int heures_de_travail,
     QString heures_de_travailr=QString::number(heures_de_travail);
     QString absencesr=QString::number(absences);
     QString ager=QString::number(age);
-        // query.prepare("UPDATE EMPLOYE set ID=id_string,POSTE=poste ,SALAIRE=salaire_string ,HEURES_DE_TRAVAIL=heures_de_travail_string,ABSENCES=absences_string,NOM=nom,PRENOM=prenom,SEXE=sexe,AGE=age_string") ;
+
            query.prepare("UPDATE EMPLOYE set ID=:id,POSTE=:poste ,SALAIRE=:salaire ,HEURES_DE_TRAVAIL=:heures_de_travail,ABSENCES=:absences,NOM=:nom,PRENOM=:prenom,SEXE=:sexe,AGE=:age WHERE id=:id") ;
 
            query.bindValue(":id", idr);
