@@ -4,7 +4,11 @@
 #include<QObject>
 #include<QString>
 #include"connection.h"
-
+#include<QMessageBox>
+#include <QtCharts>
+#include <QChartView>
+#include <QPieSeries>
+#include <QtCharts/QChartView>
 
 //Test Tutorial git
 Employe::Employe()
@@ -88,6 +92,46 @@ QSqlQueryModel* model=new QSqlQueryModel();
 
 
 
+QSqlQueryModel* Employe::afficher_id1(int id)
+{
+    QSqlQuery query;
+    QSqlQueryModel* model=new QSqlQueryModel();
+    query.prepare("select * from EMPLOYE where ID=:id");
+    query.bindValue(":id",id);
+    query.exec();
+    model->setQuery(query);
+    return model;
+}
+
+
+QSqlQueryModel* Employe::afficher_nom(QString nom)
+{
+    QSqlQuery query;
+    QSqlQueryModel* model=new QSqlQueryModel();
+    query.prepare("select * from EMPLOYE where NOM=:nom");
+    query.bindValue(":nom",nom);
+    query.exec();
+    model->setQuery(query);
+    return model;
+}
+
+QSqlQueryModel* Employe::afficher_poste(QString poste)
+{
+    QSqlQuery query;
+    QSqlQueryModel* model=new QSqlQueryModel();
+    query.prepare("select * from EMPLOYE where POSTE=:poste");
+    query.bindValue(":poste",poste);
+    query.exec();
+    model->setQuery(query);
+    return model;
+}
+
+
+
+
+
+
+
 bool Employe::modifier(int id , QString poste,int salaire,int heures_de_travail,int absences, QString nom, QString prenom , QString sexe,int age)
 {
     QSqlQuery query;
@@ -111,4 +155,162 @@ bool Employe::modifier(int id , QString poste,int salaire,int heures_de_travail,
 
      return query.exec();
 }
+
+
+
+
+
+
+
+
+
+bool Employe::recherche_id(int id)
+{
+
+    QMessageBox msgBox;
+    QSqlQuery query;
+     QString id_string=QString::number(id);
+    query.prepare("SELECT * FROM EMPLOYE WHERE ID= :id");
+    query.bindValue(":id", id_string);
+    if (query.exec() && query.next())
+    {
+            return true;
+    }
+    else
+    {
+        msgBox.setText("employe n existe pas");
+        msgBox.exec();
+        return false;
+    }
+}
+
+bool Employe::recherche_nom(QString nom)
+{
+    QMessageBox msgBox;
+    QSqlQuery query;
+
+    query.prepare("SELECT * FROM EMPLOYE WHERE NOM= :nom");
+    query.bindValue(":nom", nom);
+    if (query.exec() && query.next())
+    {
+            return true;
+    }
+    else
+    {
+
+        msgBox.setText("employe n existe pas");
+        msgBox.exec();
+        return false;
+    }
+}
+
+
+bool Employe::recherche_poste(QString poste)
+{
+    QMessageBox msgBox;
+    QSqlQuery query;
+
+    query.prepare("SELECT * FROM materiel WHERE POSTE= :poste");
+    query.bindValue(":poste", poste);
+    if (query.exec() && query.next())
+    {
+            return true;
+    }
+    else
+    {
+        msgBox.setText("employe n existe pas");
+        msgBox.exec();
+        return false;
+    }
+}
+
+QSqlQueryModel * Employe::afficher_id()
+{
+    QSqlQueryModel* model=new QSqlQueryModel();
+    model->setQuery("select ID from EMPLOYE");
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("ID"));
+                         return model;
+}
+
+bool Employe::ajouter1()
+{
+
+
+    QSqlQuery query;
+
+
+         query.prepare("INSERT INTO LOGIN(USERNAME,PASSWORD)" "VALUES (:USERNAME,:PASSWORD)");
+         query.bindValue(":USERNAME", USERNAME);
+         query.bindValue(":PASSWORD", PASSWORD);
+
+         return query.exec();
+
+
+}
+
+
+
+
+
+/*
+int Employe::count(int val, QString att )
+{
+    QSqlQuery query;
+     int row_count = 0;
+     query.exec("SELECT * FROM EMPLOYE");
+
+     while(query.next())
+         if (query.value(val)==att)
+            row_count++;
+    int size = row_count;
+    return size;
+}
+
+QChartView * Employe::piechart()
+{
+    int ap = count(3,"Vide");
+    int ap2 = count(3,"Occupe");
+
+    QPieSeries *series = new QPieSeries();
+    series->append("Vide",ap);
+    series->append("Occupe", ap2);
+
+    QChart *chart = new QChart();
+    chart->addSeries(series);
+    chart->setTitle("Charte graphique d'etat des employes");
+    chart->createDefaultAxes();
+
+    QChartView *chartview = new QChartView(chart);
+    chartview->setRenderHint(QPainter::Antialiasing);
+    chartview->resize(400,400);
+    chartview->scale(1.2,1.2);
+    return chartview;
+
+}
+
+QChartView * Employe::piechart2()
+{
+    int ap = count(2,"Nord");
+    int ap2 = count(2,"Sud");
+    int ap3 = count(2,"Est");
+    int ap4 = count(2,"Ouest");
+
+    QPieSeries *series = new QPieSeries();
+    series->append("Nord",ap);
+    series->append("Sud", ap2);
+    series->append("Est", ap3);
+    series->append("Ouest", ap4);
+
+    QChart *chart = new QChart();
+    chart->addSeries(series);
+    chart->setTitle("Charte graphique des sens des employes");
+    chart->createDefaultAxes();
+
+    QChartView *chartview = new QChartView(chart);
+    chartview->setRenderHint(QPainter::Antialiasing);
+    chartview->resize(400,400);
+    chartview->scale(1.2,1.2);
+    return chartview;
+
+}*/
 

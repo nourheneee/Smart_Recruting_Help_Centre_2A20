@@ -1,4 +1,4 @@
-QT       += core gui sql
+QT       += core gui sql charts
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -22,6 +22,8 @@ SOURCES += \
     connection.cpp \
     dialog.cpp \
     employe.cpp \
+    login.cpp \
+    login_bd.cpp \
     main.cpp \
     mainwindow.cpp
 
@@ -29,10 +31,13 @@ HEADERS += \
     connection.h \
     dialog.h \
     employe.h \
+    login.h \
+    login_bd.h \
     mainwindow.h
 
 FORMS += \
     dialog.ui \
+    login.ui \
     mainwindow.ui
 
 # Default rules for deployment.

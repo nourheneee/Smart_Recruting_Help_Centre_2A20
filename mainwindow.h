@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "employe.h"
+#include<QFileDialog>
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -23,6 +24,28 @@ private slots:
 
 
     void on_pb_modifier_clicked();
+
+    void on_pb_image_clicked();
+
+    void on_pb_recherche_id_clicked();
+
+    void on_pb_recherche_nom_clicked();
+
+    void on_pb_recherche_poste_clicked();
+
+    void on_pb_trier_sexe_clicked();
+
+    void on_pb_trier_salaire_clicked();
+
+    void on_pb_trirer_poste_clicked();
+
+    void on_pb_age_stat_clicked();
+
+
+
+    void on_pb_absences_stat_clicked();
+
+    void on_pb_heures_de_travail_stat_clicked();
 
 private:
     Ui::MainWindow *ui;

@@ -20,6 +20,7 @@ public:
 
 
 
+
     void setid (int);
     void setposte (QString);
     void setsalaire(int);
@@ -31,15 +32,27 @@ public:
     void setage (int);
 
     bool ajouter();
+    bool ajouter1();
     QSqlQueryModel* afficher();
 bool supprimer(int);
 bool modifier(int id , QString poste,int salaire,int heures_de_travail,int absences, QString nom, QString prenom , QString sexe,int age);
-    private:
+QSqlQueryModel* afficher_id();
+bool recherche_id(int );
+bool recherche_nom(QString );
+bool recherche_poste(QString );
+QSqlQueryModel* afficher_id1(int );
+QSqlQueryModel* afficher_nom(QString );
+QSqlQueryModel* afficher_poste(QString );
+
+QString USERNAME;
+QString PASSWORD;
+private:
         int id;
         QString poste;
        int salaire,heures_de_travail,absences;
     QString nom, prenom, sexe;
     int age;
+
 };
 
 #endif // EMPLOYE_H
