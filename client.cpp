@@ -2,8 +2,12 @@
 #include <QString>
 #include<QtSql/QSqlQueryModel>
 #include<QtSql/QSqlQuery>
-
 #include <QLocale>
+#include <QtCharts>
+#include <QChartView>
+#include <QPieSeries>
+#include <QSqlQuery>
+#include <QSqlQueryModel>
 
 using namespace std;
 
@@ -27,6 +31,7 @@ client::client(int id,QString nom,QString prenom,int age,QString region)
 
 }
 int client::get_id(){return id;}
+void client::Set_id(int val){ id=val;}
 void client::Set_nom(QString val) { nom = val; }
 QString client::get_nom(){return nom;}
 void client::Set_prenom(QString val) { nom = val; }
@@ -59,16 +64,14 @@ QSqlQueryModel *client::afficher()
 model->setHeaderData(3, Qt::Horizontal,QObject::tr("region"));
  return model;
 }
-bool client::supprimer(int idd)
+bool client::supprimer(int id)
 {
-    QSqlQuery query;
-    QString res=QString::number(idd);
-    query.prepare("Delete from client where ID = :id ");
-    query.bindValue(":id",res);
-    return query.exec();
-
+    QSqlQuery qry;
+    qry.prepare("Delete from reclamation where num_reclamation=:num_reclamation");
+    qry.bindValue(0,id);
+    return qry.exec();
 }
-bool client :: modifier_client(   int id ,QString nom,QString prenom,int age,QString region)
+bool client :: modifier_client(int id ,QString nom,QString prenom,int age,QString region)
 {
 
     QSqlQuery qry;
@@ -79,14 +82,53 @@ bool client :: modifier_client(   int id ,QString nom,QString prenom,int age,QSt
         qry.addBindValue(prenom);
         qry.addBindValue(age);
         qry.addBindValue(region);
-         qry.addBindValue(id);
-   return  qry.exec();
+        qry.addBindValue(id);
+        return  qry.exec();
 }
-QSqlQuery client::rechercher_id(int id)
+QSqlQueryModel *client::tri_id()
 {
-    QSqlQuery query;
-    query.prepare("SELECT * from client  where ID = :id");
-    query.bindValue(":id", id);
+    QSqlQueryModel *model=new QSqlQueryModel();
+    model->setQuery("select *from client order by ID" );
+    model->setHeaderData(0, Qt::Horizontal, QObject::tr("ID"));
+    model->setHeaderData(1, Qt::Horizontal, QObject::tr("NOM"));
+    model->setHeaderData(2, Qt::Horizontal, QObject::tr("PRENOM"));
+    model->setHeaderData(3, Qt::Horizontal, QObject::tr("AGE"));
+    model->setHeaderData(4, Qt::Horizontal, QObject::tr("REGION"));
 
-    return query;
+ return model;
+
+}
+
+QSqlQueryModel *client::tri_prenom()
+{
+    QSqlQueryModel *model=new QSqlQueryModel();
+    model->setQuery("select *from client order by PRENOM" );
+    model->setHeaderData(0, Qt::Horizontal, QObject::tr("ID"));
+    model->setHeaderData(1, Qt::Horizontal, QObject::tr("NOM"));
+    model->setHeaderData(2, Qt::Horizontal, QObject::tr("PRENOM"));
+    model->setHeaderData(3, Qt::Horizontal, QObject::tr("AGE"));
+    model->setHeaderData(4, Qt::Horizontal, QObject::tr("REGION"));
+    return model;
+
+}
+
+QSqlQueryModel *client::tri_nom()
+{
+    QSqlQueryModel *model=new QSqlQueryModel();
+    model->setQuery("select *from client order by NOM" );
+    model->setHeaderData(0, Qt::Horizontal, QObject::tr("ID"));
+    model->setHeaderData(1, Qt::Horizontal, QObject::tr("NOM"));
+    model->setHeaderData(2, Qt::Horizontal, QObject::tr("PRENOM"));
+    model->setHeaderData(3, Qt::Horizontal, QObject::tr("AGE"));
+    model->setHeaderData(4, Qt::Horizontal, QObject::tr("REGION"));
+
+ return model;
+
+}
+
+QSqlQueryModel *client::rechercher(QString rech)
+{
+    QSqlQueryModel *model= new QSqlQueryModel();
+    model->setQuery("SELECT * FROM client WHERE ID  LIKE'%"+rech+"%' or nom  LIKE'%"+rech+"%' or prenom  LIKE'%"+rech+"%' or age  LIKE'%"+rech+"%' or region LIKE'%"+rech+"%' ");
+    return model;
 }

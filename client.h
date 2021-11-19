@@ -4,17 +4,20 @@
 #include<QtSql/QSqlQuery>
 #include"QtSql/QSqlDatabase"
 #include<QtSql/QSqlQueryModel>
-
+#include <QtCharts>
+#include <QChartView>
+#include <QPieSeries>
 #include <QDebug>
 
 
 class client
 {
-public:
+
 public:
     client();
     client(int,QString,QString,int,QString);
     int get_id();
+    void Set_id(int val);
     void Set_nom(QString val) ;
     QString get_nom();
     void Set_prenom(QString val) ;
@@ -26,8 +29,14 @@ public:
     QSqlQuery rechercher_id(int id);
     bool ajouter();
     bool  modifier_client(int,QString,QString,int,QString);
-    bool supprimer(int idd);
+    bool supprimer(int id);
     QSqlQueryModel * afficher();
+    QSqlQueryModel *tri_id();
+    QSqlQueryModel *tri_prenom();
+    QSqlQueryModel *tri_nom();
+    QSqlQueryModel *rechercher(QString);
+    void statistique(QVector<double>* ticks,QVector<QString> *labels);
+
 private:
     int id;
     QString nom;

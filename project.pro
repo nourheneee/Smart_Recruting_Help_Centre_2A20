@@ -1,5 +1,9 @@
 QT       += core gui sql printsupport multimedia
-
+QT       += sql
+QT       += network
+QT       += charts
+QT       += core gui multimedia multimediawidgets
+QT       += charts multimedia
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++11
@@ -28,6 +32,7 @@ HEADERS += \
 
 FORMS += \
     mainwindow.ui
+QMAKE_CXXFLAGS += -std=gnu++14
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
