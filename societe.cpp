@@ -1,8 +1,7 @@
 #include "societe.h"
 #include <QSqlQuery>
 #include <QtDebug>
-#include <QObject>
-
+#include<QtGlobal>
 
 Societe::Societe()
 {
@@ -109,3 +108,95 @@ bool Societe::modifier(int id, QString nom ,int Datee, QString Domaine, QString 
             return  query.exec();
 }
 
+QSqlQueryModel * Societe::tricroissant()
+{QSqlQueryModel * model= new QSqlQueryModel();
+    model->setQuery("select * FROM societe ORDER BY Datee ASC");
+    return model;
+}
+QSqlQueryModel * Societe::trideccroissant()
+{QSqlQueryModel * model= new QSqlQueryModel();
+model->setQuery("select * FROM societe ORDER BY Datee DESC");
+return model;
+}
+/*void Societe::cherchersociete(int critere)
+{
+    QSqlQuery query;
+QSqlQueryModel * model= new QSqlQueryModel();
+
+    if(critere==1)
+    {
+        query.prepare("SELECT * FROM societe WHERE id =:id " );
+        query.bindValue(":identifiant", id);
+        query.exec();
+
+
+
+
+        while(query.next())
+       {
+            this->id=query.value(0).toInt();
+            this->nom=query.value(1).toString();
+            this->Datee=query.value(2).toInt();
+            this->Domaine=query.value(3).toString();
+            this->Adresse=query.value(4).toString();
+            this->Postes=query.value(5).toString();
+            this->Type=query.value(6).toString();
+            this->NombreP=query.value(7).toInt();
+}
+
+       }
+
+
+}*/
+QSqlQueryModel *Societe::chercherid(QString q)
+{
+    QString res= QString::number(id);
+    QSqlQueryModel *model=new QSqlQueryModel();
+     model->setQuery("SELECT * FROM societe  WHERE id like '%"+q+"%'" );
+     model->setHeaderData(0, Qt::Horizontal, QObject::tr("Identifiant"));
+     model->setHeaderData(1, Qt::Horizontal, QObject::tr("Nom"));
+    model->setHeaderData(2, Qt::Horizontal, QObject::tr("Date"));
+    model->setHeaderData(3, Qt::Horizontal, QObject::tr("Domaine"));
+    model->setHeaderData(4, Qt::Horizontal, QObject::tr("Adresse"));
+    model->setHeaderData(5, Qt::Horizontal, QObject::tr("Postes"));
+    model->setHeaderData(6, Qt::Horizontal, QObject::tr("Type de contrat"));
+    model->setHeaderData(7, Qt::Horizontal, QObject::tr("Nombre de postes"));
+
+
+     return model;
+}
+QSqlQueryModel *Societe::cherchernom(QString q)
+{
+     QString res=nom;
+     QSqlQueryModel *model=new QSqlQueryModel();
+     model->setQuery("SELECT * FROM societe WHERE nom like '%"+q+"%'");
+     model->setHeaderData(0, Qt::Horizontal, QObject::tr("Identifiant"));
+     model->setHeaderData(1, Qt::Horizontal, QObject::tr("Nom"));
+    model->setHeaderData(2, Qt::Horizontal, QObject::tr("Date"));
+    model->setHeaderData(3, Qt::Horizontal, QObject::tr("Domaine"));
+    model->setHeaderData(4, Qt::Horizontal, QObject::tr("Adresse"));
+    model->setHeaderData(5, Qt::Horizontal, QObject::tr("Postes"));
+    model->setHeaderData(6, Qt::Horizontal, QObject::tr("Type de contrat"));
+    model->setHeaderData(7, Qt::Horizontal, QObject::tr("Nombre de postes"));
+
+      return model;
+}
+
+
+
+
+
+
+
+
+QSqlQueryModel * Societe::trinom()
+{QSqlQueryModel * model= new QSqlQueryModel();
+    model->setQuery("select * FROM societe ORDER BY nom ASC");
+    return model;
+}
+
+QSqlQueryModel * Societe::tridoamine()
+{QSqlQueryModel * model= new QSqlQueryModel();
+    model->setQuery("select * FROM societe ORDER BY Domaine ASC");
+    return model;
+}

@@ -4,7 +4,11 @@
 #
 #-------------------------------------------------
 
-QT       += core gui sql
+QT       += core gui sql network
+QT += quick
+QT += network
+QT += charts
+
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -25,14 +29,22 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+    Notification.cpp \
+    exportexcelobject.cpp \
         main.cpp \
         mainwindow.cpp \
     connection.cpp \
+    notif.cpp \
+    smtp.cpp \
     societe.cpp
 
 HEADERS += \
+    Notification.h \
+    exportexcelobject.h \
         mainwindow.h \
     connection.h \
+    notif.h \
+    smtp.h \
     societe.h
 
 FORMS += \
@@ -42,3 +54,13 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    Pictures.qrc \
+    Pictures.qrc
+
+DISTFILES += \
+    ../../Pictures/QT/LogoQT.png \
+    ../../Pictures/QT/QT1.jpg \
+    ../../Pictures/QT1.jpg \
+    ../../Pictures/phto.png.jfif

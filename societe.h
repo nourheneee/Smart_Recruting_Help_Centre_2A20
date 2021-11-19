@@ -29,7 +29,12 @@ public:
     QSqlQueryModel* afficher();
     bool supprimer(int);
     bool modifier(int id, QString nom ,int Datee, QString Domaine, QString Adresse, QString Postes,QString Type,int NombreP);
-//bool Societe::modifier
+    QSqlQueryModel *trideccroissant();
+       QSqlQueryModel *tricroissant();
+       QSqlQueryModel *trinom();
+       QSqlQueryModel *tridoamine();
+       QSqlQueryModel *chercherid(QString);
+       QSqlQueryModel *cherchernom(QString);
 private:
     int id,Datee,NombreP;
     QString nom, Domaine,Adresse,Type,Postes;
