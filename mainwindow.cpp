@@ -69,8 +69,9 @@ if(ui->le_id->text().isEmpty()||ui->le_poste->text().isEmpty()||ui->le_salaire->
             QMessageBox::information(nullptr, QObject::tr("ERROR"),
             QObject::tr("Please Fill All Data"), QMessageBox::Ok);
         }
-
-
+//else
+//bool test=E.ajouter();
+//QMessageBox msgBox;
 if(test)
 {
 
@@ -177,7 +178,7 @@ void MainWindow::on_pb_image_clicked()
 
 
 
-void MainWindow::on_pb_recherche_id_clicked()
+/*void MainWindow::on_pb_recherche_id_clicked()
 {
 Employe E;
 int id=ui->le_id_r->text().toInt();
@@ -198,7 +199,7 @@ void MainWindow::on_pb_recherche_poste_clicked()
     QString poste=ui->le_poste_r->text();
     ui->tabler->setModel(E.afficher_poste(poste));
 }
-
+*/
 void MainWindow::on_pb_trier_sexe_clicked()
 {
     QMessageBox msgBox ;
@@ -375,14 +376,14 @@ void MainWindow::on_pb_heures_de_travail_stat_clicked()
     QSqlQueryModel * model= new QSqlQueryModel();
     model->setQuery("select * from EMPLOYE where HEURES_DE_TRAVAIL < 20 ");
     float tranche_heure1=model->rowCount();
-    model->setQuery("select * from EMPLOYE where HEURES_DE_TRAVAIL  between 20 and 35 ");
+    model->setQuery("select * from EMPLOYE where HEURES_DE_TRAVAIL  between 20 and 40 ");
     float tranche_heure2=model->rowCount();
-    model->setQuery("select * from EMPLOYE where HEURES_DE_TRAVAIL >35 ");
+    model->setQuery("select * from EMPLOYE where HEURES_DE_TRAVAIL >40 ");
     float tranche_heure3=model->rowCount();
     float total=tranche_heure1+tranche_heure2+tranche_heure3;
     QString a=QString("moins de 20 heures de travail. "+QString::number((tranche_heure1*100)/total,'f',2)+"%" );
-    QString b=QString("entre 20 et 35 heures de travail .  "+QString::number((tranche_heure2*100)/total,'f',2)+"%" );
-    QString c=QString("plus de 35 heures de travail ."+QString::number((tranche_heure3*100)/total,'f',2)+"%" );
+    QString b=QString("entre 20 et 40 heures de travail .  "+QString::number((tranche_heure2*100)/total,'f',2)+"%" );
+    QString c=QString("plus de 40 heures de travail ."+QString::number((tranche_heure3*100)/total,'f',2)+"%" );
     QPieSeries *series = new QPieSeries();
     series->append(a,tranche_heure1);
     series->append(b,tranche_heure2);
@@ -416,4 +417,47 @@ void MainWindow::on_pb_heures_de_travail_stat_clicked()
     chartView->setRenderHint(QPainter::Antialiasing);
     chartView->resize(1000,500);
     chartView->show();
+}
+
+
+
+
+
+void MainWindow::on_le_id_r_textChanged(const QString &arg1)
+{
+    QString ch = arg1;
+
+                     if (ch=="")
+                     {
+                         ui->tabler->setModel(E.afficher());
+                     }
+                     else {
+                       ui->tabler->setModel(E.recherche_id(ch)) ;
+}
+}
+
+void MainWindow::on_le_nom_r_textChanged(const QString &arg2)
+{
+    QString ch = arg2;
+
+                     if (ch=="")
+                     {
+                         ui->tabler->setModel(E.afficher());
+                     }
+                     else {
+                       ui->tabler->setModel(E.recherche_nom(ch)) ;
+}
+}
+
+void MainWindow::on_le_poste_r_textChanged(const QString &arg3)
+{
+    QString ch = arg3;
+
+                     if (ch=="")
+                     {
+                         ui->tabler->setModel(E.afficher());
+                     }
+                     else {
+                       ui->tabler->setModel(E.recherche_poste(ch)) ;
+}
 }

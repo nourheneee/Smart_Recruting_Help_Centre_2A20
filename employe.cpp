@@ -156,15 +156,64 @@ bool Employe::modifier(int id , QString poste,int salaire,int heures_de_travail,
      return query.exec();
 }
 
+QSqlQueryModel *Employe::recherche_id( QString q)
+{
+    QString res= QString::number(id);
+        QSqlQueryModel *model=new QSqlQueryModel();
+         model->setQuery("SELECT * FROM EMPLOYE  WHERE id like '%"+q+"%'" );
+         model->setHeaderData(0, Qt::Horizontal, QObject::tr("id"));
+             model->setHeaderData(1, Qt::Horizontal, QObject::tr("poste"));
+            model->setHeaderData(2, Qt::Horizontal, QObject::tr("salaire"));
+            model->setHeaderData(3, Qt::Horizontal, QObject::tr("heures_de_travail"));
+            model->setHeaderData(4, Qt::Horizontal, QObject::tr("absences"));
+            model->setHeaderData(5, Qt::Horizontal, QObject::tr("nom"));
+            model->setHeaderData(6, Qt::Horizontal, QObject::tr("prenom"));
+            model->setHeaderData(7, Qt::Horizontal, QObject::tr("sexe"));
+            model->setHeaderData(8, Qt::Horizontal, QObject::tr("age"));
+     return model;
+}
+
+
+QSqlQueryModel *Employe::recherche_nom( QString q)
+{
+
+    QString res=nom;
+    QSqlQueryModel *model=new QSqlQueryModel();
+
+         model->setQuery("SELECT * FROM EMPLOYE  WHERE nom like '%"+q+"%'" );
+         model->setHeaderData(0, Qt::Horizontal, QObject::tr("id"));
+             model->setHeaderData(1, Qt::Horizontal, QObject::tr("poste"));
+            model->setHeaderData(2, Qt::Horizontal, QObject::tr("salaire"));
+            model->setHeaderData(3, Qt::Horizontal, QObject::tr("heures_de_travail"));
+            model->setHeaderData(4, Qt::Horizontal, QObject::tr("absences"));
+            model->setHeaderData(5, Qt::Horizontal, QObject::tr("nom"));
+            model->setHeaderData(6, Qt::Horizontal, QObject::tr("prenom"));
+            model->setHeaderData(7, Qt::Horizontal, QObject::tr("sexe"));
+            model->setHeaderData(8, Qt::Horizontal, QObject::tr("age"));
+     return model;
+}
+
+QSqlQueryModel *Employe::recherche_poste( QString q)
+{
+
+    QString res=poste;
+    QSqlQueryModel *model=new QSqlQueryModel();
+         model->setQuery("SELECT * FROM EMPLOYE  WHERE poste like '%"+q+"%'" );
+         model->setHeaderData(0, Qt::Horizontal, QObject::tr("id"));
+             model->setHeaderData(1, Qt::Horizontal, QObject::tr("poste"));
+            model->setHeaderData(2, Qt::Horizontal, QObject::tr("salaire"));
+            model->setHeaderData(3, Qt::Horizontal, QObject::tr("heures_de_travail"));
+            model->setHeaderData(4, Qt::Horizontal, QObject::tr("absences"));
+            model->setHeaderData(5, Qt::Horizontal, QObject::tr("nom"));
+            model->setHeaderData(6, Qt::Horizontal, QObject::tr("prenom"));
+            model->setHeaderData(7, Qt::Horizontal, QObject::tr("sexe"));
+            model->setHeaderData(8, Qt::Horizontal, QObject::tr("age"));
+     return model;
+}
 
 
 
-
-
-
-
-
-bool Employe::recherche_id(int id)
+/*bool Employe::recherche_id(int id)
 {
 
     QMessageBox msgBox;
@@ -222,7 +271,7 @@ bool Employe::recherche_poste(QString poste)
         msgBox.exec();
         return false;
     }
-}
+}*/
 
 QSqlQueryModel * Employe::afficher_id()
 {

@@ -37,13 +37,15 @@ public:
 bool supprimer(int);
 bool modifier(int id , QString poste,int salaire,int heures_de_travail,int absences, QString nom, QString prenom , QString sexe,int age);
 QSqlQueryModel* afficher_id();
-bool recherche_id(int );
-bool recherche_nom(QString );
-bool recherche_poste(QString );
+//bool recherche_id(int );
+//bool recherche_nom(QString );
+//bool recherche_poste(QString );
 QSqlQueryModel* afficher_id1(int );
 QSqlQueryModel* afficher_nom(QString );
 QSqlQueryModel* afficher_poste(QString );
-
+QSqlQueryModel *recherche_id(QString);
+       QSqlQueryModel *recherche_nom(QString);
+         QSqlQueryModel *recherche_poste(QString);
 QString USERNAME;
 QString PASSWORD;
 private:

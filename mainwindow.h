@@ -47,6 +47,12 @@ private slots:
 
     void on_pb_heures_de_travail_stat_clicked();
 
+    void on_le_id_r_textChanged(const QString &arg1);
+
+    void on_le_nom_r_textChanged(const QString &arg1);
+
+    void on_le_poste_r_textChanged(const QString &arg1);
+
 private:
     Ui::MainWindow *ui;
     Employe E;

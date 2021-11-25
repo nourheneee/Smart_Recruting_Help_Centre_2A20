@@ -584,45 +584,6 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
         <string>Trirer par:</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pb_recherche_id">
-       <property name="geometry">
-        <rect>
-         <x>80</x>
-         <y>80</y>
-         <width>93</width>
-         <height>28</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>rechercher</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pb_recherche_nom">
-       <property name="geometry">
-        <rect>
-         <x>240</x>
-         <y>80</y>
-         <width>93</width>
-         <height>28</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>rechercher</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pb_recherche_poste">
-       <property name="geometry">
-        <rect>
-         <x>410</x>
-         <y>80</y>
-         <width>93</width>
-         <height>28</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>rechercher</string>
-       </property>
-      </widget>
       <widget class="QPushButton" name="pb_trier_sexe">
        <property name="geometry">
         <rect>
@@ -690,9 +651,6 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
       <zorder>label_22</zorder>
       <zorder>tabler</zorder>
       <zorder>label_23</zorder>
-      <zorder>pb_recherche_id</zorder>
-      <zorder>pb_recherche_nom</zorder>
-      <zorder>pb_recherche_poste</zorder>
       <zorder>pb_trier_sexe</zorder>
       <zorder>pb_trier_salaire</zorder>
       <zorder>pb_trirer_poste</zorder>
