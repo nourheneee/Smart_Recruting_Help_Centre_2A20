@@ -178,28 +178,7 @@ void MainWindow::on_pb_image_clicked()
 
 
 
-/*void MainWindow::on_pb_recherche_id_clicked()
-{
-Employe E;
-int id=ui->le_id_r->text().toInt();
-ui->tabler->setModel(E.afficher_id1(id));
-}
 
-void MainWindow::on_pb_recherche_nom_clicked()
-{
-    Employe E;
-    QString nom=ui->le_nom_r->text();
-    ui->tabler->setModel(E.afficher_nom(nom));
-
-}
-
-void MainWindow::on_pb_recherche_poste_clicked()
-{
-    Employe E;
-    QString poste=ui->le_poste_r->text();
-    ui->tabler->setModel(E.afficher_poste(poste));
-}
-*/
 void MainWindow::on_pb_trier_sexe_clicked()
 {
     QMessageBox msgBox ;
