@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/sounds">
+        <file>mixkit-positive-interface-beep-221.wav</file>
+    </qresource>
+    <qresource prefix="/new/prefix1"/>
+</RCC>
